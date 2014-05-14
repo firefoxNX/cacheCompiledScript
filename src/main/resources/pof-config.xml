@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<!DOCTYPE pof-config SYSTEM "pof-config.dtd">
+
+<pof-config>
+
+    <user-type-list>
+        <user-type>
+            <type-id>1001</type-id>
+            <class-name>com.sun.script.javascript.RhinoCompiledScript</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>2001</type-id>
+            <class-name>com.sun.script.javascript.RhinoScriptEngine</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+		
+		<user-type>
+            <type-id>3001</type-id>
+            <class-name>javax.script.SimpleScriptContext</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>4001</type-id>
+            <class-name>java.io.PrintWriter</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+         <user-type>
+            <type-id>5001</type-id>
+            <class-name>java.io.BufferedWriter</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+         <user-type>
+            <type-id>6001</type-id>
+            <class-name>java.io.OutputStreamWriter</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>7001</type-id>
+            <class-name>java.io.PrintStream</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>8001</type-id>
+            <class-name>java.io.BufferedOutputStream</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>9001</type-id>
+            <class-name>java.io.FileOutputStream</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+        
+        <user-type>
+            <type-id>9101</type-id>
+            <class-name>com.tangosol.run.xml.SimpleElement</class-name>
+            <serializer>
+                <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+            </serializer>
+        </user-type>
+
+    </user-type-list>
+
+    <allow-interfaces>true</allow-interfaces>
+    <allow-subclasses>true</allow-subclasses>
+
+    <default-serializer>
+        <class-name>com.vineetb.cache.coherence.ReflectionPofSerializer</class-name>
+    </default-serializer>
+
+</pof-config>
